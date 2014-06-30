@@ -3,15 +3,15 @@ prototype
 Requirements : gradle 1.10 , java 7
 
 Thre project is using 
-  Gradle<br/>, 
-  Spring Boot , 
-  Spring WebMVC , 
-  Jetty as runtime container , 
-  Webjars for javascript files managements , 
-  REST using Spring HATEAOS and HAL ,
-  Spring Actuator ( http://docs.spring.io/spring-boot/docs/1.1.3.RELEASE/reference/htmlsingle/#production-ready-endpoints )
-  Jolokia ( http://docs.spring.io/spring-boot/docs/1.1.3.RELEASE/reference/htmlsingle/#production-ready-jolokia )
-  YAML configuration file ( application.yml) for runtime configuration
+  <br/>Gradle, 
+  <br/>Spring Boot , 
+  <br/>Spring WebMVC , 
+  <br/>Jetty as runtime container , 
+  <br/>Webjars for javascript files managements , 
+  <br/>REST using Spring HATEAOS and HAL ,
+  <br/>Spring Actuator ( http://docs.spring.io/spring-boot/docs/1.1.3.RELEASE/reference/htmlsingle/#production-ready-endpoints )
+  <br/>Jolokia ( http://docs.spring.io/spring-boot/docs/1.1.3.RELEASE/reference/htmlsingle/#production-ready-jolokia )
+  <br/>YAML configuration file ( application.yml) for runtime configuration
   
 From console please do :
 gradle run
