@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Prototype</title>
+
+<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/3.1.1/css/bootstrap.min.css" />
+<script type="text/javascript" src="/webjars/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="/webjars/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/webjars/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="/webjars/angularjs/1.2.16/angular.min.js"></script>
+<script type="text/javascript" src="/webjars/highcharts/3.0.10/highcharts.js"></script>
+<script type="text/javascript" src="/webjars/highcharts-ng/0.0.6/highcharts-ng.js"></script>
+<script type="text/javascript"src="/js/controller.js"></script>
+</head>
+
+<body>
+
+	<div id="navbar" class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target=".navbar-collapse">
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand"
+				href="https://github.com/spring-projects/spring-boot"> Spring
+				Boot </a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="/"> Home </a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="jumbotron">
+		<h1>Home</h1>
+		<p>Some static content</p>
+		<div ng-app="myapp">
+			<div ng-controller="myctrl">
+				<div class="span12">
+					<input ng-model="chartConfig.title.text">
+					<button ng-click="addSeries()">Add Series</button>
+					<button ng-click="addPoints()">Add Points to Random Series</button>
+					<button ng-click="removeRandomSeries()">Remove Random
+						Series</button>
+					<button ng-click="swapChartType()">Line/Bar</button>
+					<button ng-click="toggleLoading()">Loading?</button>
+				</div>
+				<div class="row">
+					<highchart id="chart1" config="chartConfig" class="span10"></highchart>
+				</div>
+			</div>
+		</div>
+
+		<h3>
+			<a href="https://github.com/pablojim/highcharts-ng">See
+				Highcharts-ng on github</a>
+		</h3>
+	</div>
+</body>
+</html>

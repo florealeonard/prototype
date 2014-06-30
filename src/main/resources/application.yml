@@ -1,0 +1,11 @@
+management:
+ port : 8081
+ context-path: /admin
+
+info:
+ build :
+  artifact : 2
+  name: 2
+  description : 3
+  version : 4
+ 
