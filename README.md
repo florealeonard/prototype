@@ -16,6 +16,11 @@ Thre project is using
 From console please do :
 gradle run
 
+For a distribution sample :
+gradle distTar ( or : gradle installApp - Installs the project as a JVM application along with libs and OS specific scripts. )
+
+
+
 Then in your browser
 http://localhost:8080/
 
