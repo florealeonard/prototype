@@ -3,7 +3,7 @@ prototype
 Requirements : gradle 1.10 , java 7
 
 Thre project is using 
-  Gradle , 
+  Gradle \n, 
   Spring Boot , 
   Spring WebMVC , 
   Jetty as runtime container , 
